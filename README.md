@@ -7,7 +7,7 @@ This is a solution to the [Notifications page challenge on Frontend Mentor](http
 ![127 0 0 1_3000_index html(iPad Air)_11zon](https://github.com/Bibiwei-Pere/Notifications-page/assets/106984663/46903a8a-8884-45c3-b888-a04ec2478794)
 
 #### Mobile
-<img src="https://github.com/Bibiwei-Pere/Notifications-page/assets/106984663/c36e171e-9a06-4f10-a5a8-c32bee08de0d" width="450" height="550">
+<img src="https://github.com/Bibiwei-Pere/Notifications-page/assets/106984663/c36e171e-9a06-4f10-a5a8-c32bee08de0d" width="350" height="550">
 
 
 ### Links
