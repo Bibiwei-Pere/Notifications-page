@@ -66,14 +66,10 @@ b:hover, b:focus, b:active, a:hover, a:focus, a:active, .mark:hover, .mark:focus
     align-items: center;
 }
 
-.wrapper-1 div {
+.wrapper-1 div div {
     display: flex;
     align-items: center;
-    gap: 10px;
-}
-.wrapper-1 div div {
-    background: var(--Blue);
-    color: var(--White);
+    justify-content: center;
     font-size: 16px;
     font-weight: bold;
     padding: 3px 10px;
@@ -84,8 +80,12 @@ b:hover, b:focus, b:active, a:hover, a:focus, a:active, .mark:hover, .mark:focus
     margin-top: 25px;
 }
 
+.box img {
+    width: 45px;
+    height: 45px;
+}
 
-.wrapper-2 .box {
+.box {
     display: flex;
     gap: 15px;
     width: 100%;
@@ -93,11 +93,12 @@ b:hover, b:focus, b:active, a:hover, a:focus, a:active, .mark:hover, .mark:focus
     padding: 15px;
     margin-bottom: 10px;
     border-radius: 10px;
+    background-color: var(--White);
 }
-.box img {
-    width: 45px;
-    height: 45px;
-}
+.box.unread {
+    background-color: hsl(210, 60%, 98%);
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.03);
+  }
 
 .kim-box {
     width: 100%;
@@ -139,8 +140,34 @@ b:hover, b:focus, b:active, a:hover, a:focus, a:active, .mark:hover, .mark:focus
     background: var(--Light-grayish-blue-1);
 }
 
-.box:nth-last-child(1), .box:nth-last-child(2), .box:nth-last-child(3), .box:nth-last-child(4) {
-    background: var(--White);
+
+.unread-dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 0px 0px 1px 7px;
+    border-radius: 50%;
+    background: var(--Red);
+  } 
+
+  .number {
+    font-size: 1.2rem;
+    font-weight: 800;
+    background-color: var(--Blue);
+    color: var(--White);
+    padding: 0.1rem 0.6rem;
+    border-radius: 0.4rem;
+    display: inline-block;
+    margin: 0 0.5rem;
+  }
+
+.title {
+    font-size: 24px;
+    color: var(--Very-dark-blue);
+}
+
+.notification {
+    border: 2px solid;
 }
 
 /* Respomsive */
