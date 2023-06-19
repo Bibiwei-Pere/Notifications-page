@@ -1,3 +1,5 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="/assets/css/index.css">
+  <link rel="stylesheet" href="/static/css/index.css">
   <title>Frontend Mentor | Notifications page</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,36 +18,36 @@
   <main class="container">
     <div class="wrapper-1">
       <div>
-        <h1>Notifications</h1>
-        <div>3</div>
+        <h1 class="title"></h1>
+        <div class="notification-count"></div>
       </div>
-      <p class="mark" id="request">Mark all as read</p>
+      <p class="mark">Mark all as read</p>
     </div>
 
     <div class="wrapper-2">
-      <div class="box" id="mark">
-        <img src="/assets/images/avatar-mark-webber.webp" alt="Mark">
+      <div class="box unread">
+        <img src="/static/images/avatar-mark-webber.webp" alt="Mark">
         <div>
-          <p><b>Mark Webber</b> reacted to your recent post <a href="./">My first tournament today!</a></p>
+          <p><b>Mark Webber</b> reacted to your recent post <a href="./">My first tournament today!</a><span class="unread-dot"></span></p>
           <p class="time">1 m ago</p>
         </div>
       </div>
-      <div class="box" id="angela">
-        <img src="/assets/images/avatar-angela-gray.webp" alt="Angela">
+      <div class="box unread">
+        <img src="/static/images/avatar-angela-gray.webp" alt="Angela">
         <div>
-          <p><b>Angela Gray</b> followed you</p>
+          <p><b>Angela Gray</b> followed you<span class="unread-dot"></span></p>
           <p class="time">5 m ago</p>
         </div>
       </div>
-      <div class="box" id="jacob">
-        <img src="/assets/images/avatar-jacob-thompson.webp" alt="Jacob">
+      <div class="box unread">
+        <img src="/static/images/avatar-jacob-thompson.webp" alt="Jacob">
         <div>
-          <p><b>Jacob Thompson</b> has joined your group <a href="./">Chess Club</a></p>
+          <p><b>Jacob Thompson</b> has joined your group <a href="./">Chess Club</a><span class="unread-dot"></span></p>
           <p class="time">1 day ago</p>
         </div>
       </div>
       <div class="box">
-        <img src="/assets/images/avatar-rizky-hasanuddin.webp" alt="Rizky">
+        <img src="/static/images/avatar-rizky-hasanuddin.webp" alt="Rizky">
         <div>
           <p><b>Rizky Hasanuddin</b> sent you a private message</p>
           <p class="time">5 days ago</p>
@@ -53,23 +55,23 @@
         </div>
       </div>
       <div class="box">
-        <img src="/assets/images/avatar-kimberly-smith.webp" alt="Kimberly">
+        <img src="/static/images/avatar-kimberly-smith.webp" alt="Kimberly">
         <div class="kim-box">
             <p><b>Kimberly Smith</b> commented on your picture</p>
             <p class="time">1 week ago</p>
         </div>
-        <img  class="kim" src="/assets/images/image-chess.webp" alt="chess">
+        <img  class="kim" src="/static/images/image-chess.webp" alt="chess">
 
       </div>
       <div class="box">
-        <img src="/assets/images/avatar-nathan-peterson.webp" alt="Nathan">
+        <img src="/static/images/avatar-nathan-peterson.webp" alt="Nathan">
         <div>
           <p><b>Nathan Peterson</b> reacted to your recent post <a href="./">5 end-game strategies to increase your win rate</a></p>
           <p class="time">2 weeks ago</p>
         </div>
       </div>
       <div class="box">
-        <img src="/assets/images/avatar-anna-kim.webp" alt="Ann">
+        <img src="/static/images/avatar-anna-kim.webp" alt="Ann">
         <div>
           <p><b>Anna Kim</b> left the group <a href="./">Chess Club</a></p>
           <p class="time">2 weeks ago</p>
@@ -77,6 +79,6 @@
       </div>
     </div>
   </main>
-  <script src="/assets/js/index.js"></script>
+  <script src="/static/js/index.js"></script>
 </body>
 </html>
